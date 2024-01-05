@@ -11,9 +11,9 @@ class Kanmi:
 
     @classmethod
     def hash(cls, source, salt):
-        '''
+        """
             you can subclass Kanmi and provide another hash function
-        '''
+        """
         return sha1(salt + cls.SPLITER + source)
 
     @classmethod
