@@ -27,7 +27,7 @@ class Kanmi:
         return self.salt + self.SPLITER + self.hashed
 
     @classmethod
-    def create(cls, source: str, salt: Optional[str]=None) -> Self:
+    def create(cls, source: str, salt: Optional[str] = None) -> Self:
         if salt is None:
             salt = random_string(length=cls.SALT_LENGTH)
 
